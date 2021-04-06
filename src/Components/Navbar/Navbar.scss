@@ -1,0 +1,33 @@
+@import "../Sass-Components/fonts";
+@import "../Sass-Components/Variables";
+
+@mixin centered {
+  display: grid;
+  place-items: center;
+}
+
+.navbar-container {
+  @include centered();
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  left: 10px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $front-content-color;
+  height: 60vh;
+  width: 100px;
+  border-radius: 25px;
+}
+
+.navbar-link {
+  @include centered();
+  font-family: $navbar-font-family;
+  text-decoration: none;
+  color: $navbar-text-color;
+  font-size: 20px;
+}

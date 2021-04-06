@@ -1,0 +1,74 @@
+@import "../Sass-Components/Variables";
+@import "../Sass-Components/fonts";
+.front {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  &__left {
+    flex: 0.65;
+    display: grid;
+    place-items: center;
+
+    .content {
+        height:400px;
+        display: flex;
+        &__name {
+            font-family: $heading-font-family;
+            color: $front-heading-color;
+            font-size:20px;
+        }
+        .contentleft{
+            position: relative;
+            left:100px;
+        }
+        &__description {
+            display: grid;
+            place-items: center;
+            font-family: $content-font-family;
+            color: $front-content-color;
+            font-weight: 1000;
+            font-size:50px;
+            line-height: 1.5em;
+        }
+        &__myimage
+        {
+            background-repeat: no-repeat;
+            background-size: contain;
+            height:300px;
+            width:300px;
+            position:relative;
+            left:200px;
+            .myimg
+            {
+                display: inline-block;
+                width: 100%;
+                height:100%;
+                border-radius:50%;
+            }
+        }
+    }
+  }
+  &__right {
+    flex: 0.35;
+    background-color: $front-content-color;
+    display: grid;
+    place-items: center;
+
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 95%;
+        justify-content: space-around;
+        align-items: flex-end;
+        &__images {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+        }
+      }
+      
+  }
+}
+
