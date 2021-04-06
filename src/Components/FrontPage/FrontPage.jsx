@@ -1,37 +1,68 @@
-import React from 'react'
+import React from "react";
 import "./FrontPage.scss";
 function FrontPage() {
-    return (
-        <div className="front">
-            <div className="front__left">
-            <div className="content">
-            <div className="contentleft">
+  return (
+    <div className="front">
+      {/* Here the Left Front Page of Front starts from here */}
+      <div className="front__left">
+        {/* Text content and Image starts from here */}
+        <div className="content">
+          <div className="contentleft">
             <div className="content__name">
-            <h1>--Naman Kalra</h1>   
+              <h1>--Naman Kalra</h1>
             </div>
             <div className="content__description">
-                <span>Hello, My Name is Naman </span>
-                <span>Kalra, Focusing on </span>
-                <span>Learning......</span>
+              <span>Hello, My Name is Naman </span>
+              <span>Kalra, Focusing on </span>
+              <span>Learning......</span>
             </div>
-            </div>
-            <div className="contentright">
+          </div>
+          <div className="contentright">
             <div className="content__myimage">
-                <img src="images/profile.jpg" alt="My Profile" className="myimg"></img>
+              <img
+                src="images/profile.jpg"
+                alt="My Profile"
+                className="myimg"
+              ></img>
             </div>
-            </div>
-            </div>
-            </div>
-            <div className="front__right">
-            <div className="links">
-                        <a href="/" ><img src="images/instagram.png" alt="Instagram Logo" className="links__images" /></a>
-                        <a href="/"><img src="images/facebook.png" alt="Facebook Logo" className="links__images"/></a>
-                        <a href="/"><img src="images/github.png" alt="Github logo" className="links__images"/></a>
-                        <a href="/" ><img src="images/linkedin.png" alt="Linkedin Logo" className="links__images"/></a>
-                        </div>
-                </div>
-            </div>
-    )
+          </div>
+        </div>
+      </div>
+      {/* Right Part of Front Page starts from here */}
+      <div className="front__right">
+        <div className="socialLinks">
+          <a href="/">
+            <img
+              src="images/instagram.png"
+              alt="Instagram Logo"
+              className="socialLinks__images"
+            />
+          </a>
+          <a href="/">
+            <img
+              src="images/facebook.png"
+              alt="Facebook Logo"
+              className="socialLinks__images"
+            />
+          </a>
+          <a href="/">
+            <img
+              src="images/github.png"
+              alt="Github logo"
+              className="socialLinks__images"
+            />
+          </a>
+          <a href="/">
+            <img
+              src="images/linkedin.png"
+              alt="Linkedin Logo"
+              className="socialLinks__images"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default FrontPage
+export default FrontPage;

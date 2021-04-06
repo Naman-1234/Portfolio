@@ -1,0 +1,20 @@
+@mixin centeredGrid {
+  display: grid;
+  place-items: center;
+}
+
+@mixin backGround
+{
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+// Note in these type of mixins first word refers to 
+//justify content and second to align items
+@mixin spaceAroundEndFlex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}

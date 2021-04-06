@@ -1,13 +1,9 @@
 @import "../Sass-Components/fonts";
 @import "../Sass-Components/Variables";
-
-@mixin centered {
-  display: grid;
-  place-items: center;
-}
+@import "../Sass-Components/mixins";
 
 .navbar-container {
-  @include centered();
+  @include centeredGrid();
   height: 100%;
   width: 100px;
   position: fixed;
@@ -20,14 +16,16 @@
   justify-content: space-around;
   background-color: $front-content-color;
   height: 60vh;
-  width: 100px;
+  width: 120px;
   border-radius: 25px;
-}
 
-.navbar-link {
-  @include centered();
+  &__link {
+  @include centeredGrid();
   font-family: $navbar-font-family;
   text-decoration: none;
   color: $navbar-text-color;
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 10px 0 10px;
+  }
 }
