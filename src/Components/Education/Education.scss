@@ -1,0 +1,18 @@
+@import "../Sass-Components/Variables";
+@import "../Sass-Components/fonts";
+@import "../Sass-Components/mixins";
+
+.education {
+    height:100vh;
+    padding-left: 150px;
+    padding-top:15px;
+    &__heading {
+        font-family: $heading-font-family;
+        font-size: 30px;
+    }
+    &__description {
+        height:80vh;
+        @include spaceAroundFlex();
+
+    }
+}

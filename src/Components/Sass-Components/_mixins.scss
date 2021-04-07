@@ -18,3 +18,10 @@ background-size: contain;
     justify-content: space-around;
     align-items: flex-end;
 }
+
+@mixin spaceAroundFlex 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
