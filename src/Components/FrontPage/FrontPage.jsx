@@ -1,10 +1,13 @@
 import React from "react";
 import "./FrontPage.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 function FrontPage() {
   return (
     <div className="front">
       {/* Here the Left Front Page of Front starts from here */}
-      <div className="front__left">
+      <div className="front__left" data-aos="zoom-in" data-aos-duration="1000">
         {/* Text content and Image starts from here */}
         <div className="content">
           <div className="contentleft">

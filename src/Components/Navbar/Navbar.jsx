@@ -1,8 +1,11 @@
 import React from "react";
 import "./Navbar.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 function Navbar() {
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" data-aos="fade-right" data-duration="1000">
     <div className="navbar">
       <a href="/" className="navbar__link">
         Home
