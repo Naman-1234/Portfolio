@@ -2,12 +2,11 @@
 @import "../../Sass-Components/Variables";
 @import "../../Sass-Components/mixins";
 .projectCard {
-    height: 250px;
-    width: 500px;
+  
     @include backGround();
     &__img {
-    width:100%;
-    height:100%;
+    height: 250px;
+    width: 500px;
     border-radius: 15px;
     }
 }

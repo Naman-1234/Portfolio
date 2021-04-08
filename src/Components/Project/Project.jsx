@@ -2,10 +2,22 @@ import React from "react";
 import "./Project.scss";
 import ProjectCard from "../Utilities/ProjectCard/ProjectCard";
 const imageSources = [
-  "images/project.png",
-  "images/project.png",
-  "images/project.png",
-  "images/project.png",
+  {
+    src: 'images/project.png',
+    aos: 'zoom-in-left'
+  },
+  {
+    src: 'images/project.png',
+    aos: 'zoom-in-right'
+  },
+  {
+    src: 'images/project.png',
+    aos: 'zoom-in-left'
+  },
+  {
+    src: 'images/project.png',
+    aos: 'zoom-in-right'
+  }
 ];
 function Project() {
   return (
@@ -15,7 +27,7 @@ function Project() {
       </div>
       <div className="project__description">
         {imageSources.map((src) => {
-          return <ProjectCard src={src}></ProjectCard>;
+          return <ProjectCard src={src.src} aos={src.aos} ></ProjectCard>;
         })}
       </div>
     </div>
