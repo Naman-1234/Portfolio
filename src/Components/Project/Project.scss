@@ -1,0 +1,19 @@
+@import "../Sass-Components/Variables";
+@import "../Sass-Components/fonts";
+@import "../Sass-Components/mixins";
+
+
+.project {
+    height:100vh;
+    padding-left: 150px;
+    padding-top:15px;
+    &__heading {
+        font-family: $heading-font-family;
+        font-size: 30px;
+    }
+    &__description {
+        // Below line is to remove warning of emoty selector
+        display: block;
+        // Will write css to make project section here
+    }
+}

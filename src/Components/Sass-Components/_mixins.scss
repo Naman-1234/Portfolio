@@ -11,17 +11,21 @@ background-size: contain;
 
 // Note in these type of mixins first word refers to 
 //justify content and second to align items
+
+//Using inheritance to remove redundancy
+.colflex {
+  display: flex;
+  flex-direction: column; 
+}
 @mixin spaceAroundEndFlex
 {
-    display: flex;
-    flex-direction: column;
+    @extend .colflex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
 @mixin spaceAroundFlex 
 {
-  display: flex;
-  flex-direction: column;
+  @extend .colflex;
   justify-content: space-around;
 }
