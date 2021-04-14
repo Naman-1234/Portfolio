@@ -32,13 +32,14 @@ function Education() {
         <h1>Education</h1>
       </div>
       <div className="education__description">
-        {educationData.map((data) => {
+        {educationData.map((data, index) => {
           return (
             <EducationCard
               Institute={data.Institute}
               Class={data.Class}
               Grade={data.Grade}
               Year={data.Year}
+              key={index}
             />
           );
         })}

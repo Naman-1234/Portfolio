@@ -2,11 +2,28 @@
 @import "../../Sass-Components/Variables";
 @import "../../Sass-Components/mixins";
 .projectCard {
-  
-    @include backGround();
-    &__img {
-    height: 250px;
-    width: 500px;
-    border-radius: 15px;
-    }
+  h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .date {
+    position: absolute;
+    top: -30px;
+  }
 }

@@ -30,7 +30,12 @@ background-size: contain;
   justify-content: space-around;
 }
 
-
+@mixin centeredFlex
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

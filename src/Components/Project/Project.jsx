@@ -1,34 +1,56 @@
 import React from "react";
 import "./Project.scss";
 import ProjectCard from "../Utilities/ProjectCard/ProjectCard";
+
+const aosData = "flip-up";
 const imageSources = [
   {
-    src: 'images/project.png',
-    aos: 'zoom-in-left'
+    heading: 'Heading 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.',
+    date: '27 May 2021',
+    src: "images/project.png",
+    aos: aosData,
   },
   {
-    src: 'images/project.png',
-    aos: 'zoom-in-right'
+    heading: 'Heading 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.',
+    date: '27 May 2021',
+    src: "images/project.png",
+    aos: aosData,
   },
   {
-    src: 'images/project.png',
-    aos: 'zoom-in-left'
+    heading: 'Heading 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.',
+    date: '27 May 2021',
+    src: "images/project.png",
+    aos: aosData,
   },
   {
-    src: 'images/project.png',
-    aos: 'zoom-in-right'
-  }
+    heading: 'Heading 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.',
+    date: '27 May 2021',
+    src: "images/project.png",
+    aos: aosData,
+  },
 ];
 function Project() {
   return (
-    <div className="project">
-      <div class="project__heading">
+    <div className="project"  >
+      <div className="project__heading">
         <h1>Projects</h1>
       </div>
       <div className="project__description">
-        {imageSources.map((src) => {
-          return <ProjectCard src={src.src} aos={src.aos} ></ProjectCard>;
-        })}
+        <div className="timeline"  data-aos="flip-up" data-aos-duration="2000">
+          <ul>
+            {imageSources.map((src,index) => {
+              return (
+                <li key={index} >
+                  <ProjectCard props={src} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
