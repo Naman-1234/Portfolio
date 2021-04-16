@@ -27,8 +27,8 @@
 
         li {
           padding: 20px;
-          background-color: #1e1f22;
-          color: white;
+          background-color: $project-card-color;
+          color: $white;
           border-radius: 10px;
           margin-bottom: 20px;
 
@@ -57,31 +57,11 @@
     position: relative;
     margin-bottom: 50px;
   }
-  @keyframes goRight {
-    0%
-    {
-        left: -60px;
-    }
-    25%{
-        left: -52.5px;
-    }
-    50% {
-        left: -45px;
-    }
-    75% {
-        left: -37.5px;
-    }
-    100% {
-        left: -30px;
-    }
-}
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
     border-radius: 20px 0px 20px 20px;
-    // animation-name: goRight;
-    // animation-duration: .5s;
   }
 
   .timeline ul li:nth-child(even) {
@@ -114,12 +94,4 @@
   .timeline ul li:hover::before {
     background-color: aqua;
   }
-}
-
-.transformEven {
-    left: -30px;
-}
-
-.transformOdd {
-    left: 30px;
 }

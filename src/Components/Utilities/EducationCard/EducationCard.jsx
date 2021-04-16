@@ -1,6 +1,7 @@
 import React from 'react'
 import "./EducationCard.scss";
 function EducationCard(props) {
+    // eslint-disable-next-line react/prop-types
     const {Institute, Class, Year, Grade} = props
     return (
         <div className="education-card" data-aos="zoom-in" data-duration="2000">
