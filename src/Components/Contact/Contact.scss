@@ -1,0 +1,53 @@
+@import "../Sass-Components/Variables";
+@import "../Sass-Components/fonts";
+@import "../Sass-Components/mixins";
+
+.contact {
+  height: 100vh;
+  padding-left: 150px;
+  padding-top: 15px;
+  &__heading {
+    font-family: $heading-font-family;
+    font-size: 30px;
+  }
+
+  &__description {
+      
+    .up {
+        height: 65vh;
+        display: flex;
+        margin: 0 auto;
+        width: 65%;
+        &__left {
+            flex: 1;
+            display: flex;
+            align-items: space-between;
+            justify-content: center;
+            background-color: aqua;
+            height: 100%;
+
+            div {
+                background-color:brown;
+                margin-bottom: 10px;
+            }
+        }
+        &__right {
+            flex: 1;
+            background-color: blue;
+        }
+    }
+    .down {
+       height: 15vh;
+        position: relative;
+        p {
+           text-align: center;
+           position: absolute;
+           bottom: 0;
+           left: 50%;
+           transform: translateX(-50%);
+           color: rgb(250, 0, 0);
+           font-size: 40px;
+        }
+    }
+  }
+}

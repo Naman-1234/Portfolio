@@ -5,7 +5,6 @@
 .front {
   display: flex;
   height: 100vh;
-
   &__left {
     flex: 0.65;
     @include centeredGrid();
