@@ -1,0 +1,23 @@
+@import "../Sass-Components/fonts";
+@import "../Sass-Components/mixins";
+@import "../Sass-Components/Variables";
+
+.skills {
+    min-height: 60vh;
+    height: auto;
+    padding-left: 150px;
+    padding-top:15px;
+    &__heading {
+        font-family: $heading-font-family;
+        font-size: 30px;
+    }
+
+    &__description {
+        @include SimpleGrid();
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+    }
+}

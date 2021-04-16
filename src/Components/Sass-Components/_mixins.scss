@@ -37,6 +37,12 @@ background-size: contain;
   justify-content: center;
 }
 
+@mixin SimpleGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 30px;
+  grid-template-rows: auto;
+}
 
 
 //Coming on to responsive part

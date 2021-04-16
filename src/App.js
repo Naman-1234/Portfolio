@@ -5,7 +5,7 @@ import FrontPage from './Components/FrontPage/FrontPage';
 import './App.css';
 import Education from './Components/Education/Education';
 import Project from "./Components/Project/Project";
-
+import Skills from "./Components/Skills/Skills";
 function App() {
   return (
     <div>
@@ -13,6 +13,7 @@ function App() {
     <FrontPage />
     <Education />
     <Project />
+    <Skills />
     </div>
   );
 }
