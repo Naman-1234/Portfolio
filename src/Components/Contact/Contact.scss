@@ -6,9 +6,10 @@
   height: 100vh;
   padding-left: 150px;
   padding-top: 15px;
+  font-family: $content-font-family;
   &__heading {
-    font-family: $heading-font-family;
     font-size: 30px;
+    font-family: $heading-font-family;
   }
 
   &__description {
@@ -18,22 +19,31 @@
         display: flex;
         margin: 0 auto;
         width: 65%;
+
         &__left {
             flex: 1;
             display: flex;
-            align-items: space-between;
-            justify-content: center;
-            background-color: aqua;
+            flex-direction: column;
+            justify-content: space-evenly ;
+            background-color:$content-background-color;
             height: 100%;
+            padding-left: 25px;
 
-            div {
-                background-color:brown;
-                margin-bottom: 10px;
+
+            input, button, textarea {
+              font-family: $content-font-family; 
+              border-radius: 10px;
+              outline:0;
+              border: 0;
             }
+            button {
+              padding: 5px 20px 5px 20px;
+            }
+            
         }
         &__right {
             flex: 1;
-            background-color: blue;
+            background-color: $front-content-color;
         }
     }
     .down {
