@@ -5,11 +5,11 @@ const skillsLogos = require('../../Data/Skills.json');
 console.log('Skillslogo', skillsLogos);
 function Skills() {
     return (
-        <div className="skills">
+        <div className="skills" id="skillsPage">
             <div className="skills__heading">
             <h1>Skills</h1>
             </div>
-            <div className="skills__description">
+            <div className="skills__description" data-aos="zoom-in-right" data-aos-duration="2000">
             {
                 skillsLogos.map((src, index)=>{
                     return <img src={src.src} alt="logo" key={index} />

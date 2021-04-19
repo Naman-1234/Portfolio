@@ -4,7 +4,7 @@ import "./Education.scss";
 const educationData =  require('../../Data/EducationData.json');
 function Education() {
   return (
-    <div className="education">
+    <div className="education" id="educationPage">
       <div
         className="education__heading"
         data-aos="zoom-in-right"

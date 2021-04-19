@@ -5,7 +5,7 @@ import projectData from "../../Data/Project.json";
 
 function Project() {
   return (
-    <div className="project"  >
+    <div className="project" id="projectPage" >
       <div className="project__heading">
         <h1>Projects</h1>
       </div>

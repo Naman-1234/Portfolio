@@ -1,7 +1,9 @@
 @import "../Sass-Components/Variables";
 @import "../Sass-Components/fonts";
 @import "../Sass-Components/mixins";
-
+* {
+  font-weight: bolder;
+}
 .contact {
   height: 100vh;
   padding-left: 150px;
@@ -19,7 +21,7 @@
         display: flex;
         margin: 0 auto;
         width: 65%;
-
+        font-size: 1.7em;
         &__left {
             flex: 1;
             display: flex;
@@ -27,19 +29,47 @@
             justify-content: space-evenly ;
             background-color:$content-background-color;
             height: 100%;
-            padding-left: 25px;
 
 
-            input, button, textarea {
+            input{
               font-family: $content-font-family; 
               border-radius: 10px;
               outline:0;
               border: 0;
+              padding: 10px 30px 10px 30px;
             }
-            button {
-              padding: 5px 20px 5px 20px;
+            .name , .email {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
             }
-            
+            .description_label {
+             margin: 0 auto;
+            }
+            .description__text {
+          display: grid;
+          place-items: center;
+          textarea {
+            font-family: $content-font-family; 
+            outline:none;
+            border: 0;
+            border-radius: 10px;
+            padding: 17px 30px 17px 30px;
+          }
+            }
+            .submit_button {
+              margin: 0 auto;
+              button {
+              font-size: 25px;
+              font-family: $content-font-family; 
+              outline:none;
+              border: 0;
+              border-radius: 10px;
+              padding: 5px 70px 5px 70px;
+              cursor: pointer;
+              }
+            }
+
         }
         &__right {
             flex: 1;

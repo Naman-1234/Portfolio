@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.scss";
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contactPage">
       <div
         className="contact__heading"
         data-aos="zoom-in-right"
@@ -10,7 +10,7 @@ function Contact() {
       >
         <h1>Contact Me</h1>
       </div>
-      <div className="contact__description">
+      <div className="contact__description" data-aos="flip-right" data-aos-duration="2000">
         <div className="up">
           <div className="up__left">
             <div className="name">
@@ -25,8 +25,7 @@ function Contact() {
               <label htmlFor="description">Description:</label>
             </div>
             <div className="description__text">
-              <textarea cols="50" rows="10" style={{ resize: "none" }}>
-                Enter your message here
+              <textarea cols="50" rows="10" style={{ resize: "none" }} placeholder="Enter your message here">
               </textarea>
             </div>
             <div className="submit_button">

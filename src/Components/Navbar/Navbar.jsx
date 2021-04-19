@@ -7,19 +7,19 @@ function Navbar() {
   return (
     <div className="navbar-container" data-aos="fade-right" data-duration="1000">
     <div className="navbar">
-      <a href="/" className="navbar__link">
+      <a href="#frontPage" className="navbar__link">
         Home
       </a>
-      <a href="/" className="navbar__link">
+      <a href="#educationPage" className="navbar__link">
         Education
       </a>
-      <a href="/" className="navbar__link">
+      <a href="#projectPage" className="navbar__link">
         Projects  
       </a>
-      <a href="/" className="navbar__link">
+      <a href="#skillsPage" className="navbar__link">
         Skills
       </a>
-      <a href="/" className="navbar__link">
+      <a href="#contactPage" className="navbar__link">
         <span>Contact</span>
         <span>Me</span>
       </a>
