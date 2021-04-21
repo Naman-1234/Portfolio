@@ -33,7 +33,11 @@ function Contact() {
             </div>
           </div>
 
-          <div className="up__right"></div>
+          <div className="up__right">
+            <span>Would like to</span>
+            <span> hear from</span>
+            <span>You.</span>
+          </div>
         </div>
         <div className="down">
           <p>Made with ❤️ by Naman</p>

@@ -1,26 +1,26 @@
 [
     {
-        "heading": "Heading 1",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
-        "date": "27 May 2021",
-        "src:": "images/project.png"
+        "heading": "Image-Editor",
+        "content": "This is a react app in which you upload multiple images, then you edit only one of the image and the app will edit the rest of the images for you.",
+        "date": "10 Jan 2021",
+        "link": "https://github.com/Naman-1234/Image-Editor"
     },
     {
-        "heading": "Heading 1",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
-        "date": "27 May 2021",
-        "src:": "images/project.png"
+        "heading": "Image-Editor",
+        "content": "This is a react app in which you upload multiple images, then you edit only one of the image and the app will edit the rest of the images for you.",
+        "date": "10 Jan 2021",
+        "link": "https://github.com/Naman-1234/Image-Editor"
     },
     {
-        "heading": "Heading 1",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
-        "date": "27 May 2021",
-        "src:": "images/project.png"
+        "heading": "Image-Editor",
+        "content": "This is a react app in which you upload multiple images, then you edit only one of the image and the app will edit the rest of the images for you.",
+        "date": "10 Jan 2021",
+        "link": "https://github.com/Naman-1234/Image-Editor"
     },
     {
-        "heading": "Heading 1",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.",
-        "date": "27 May 2021",
-        "src:": "images/project.png"
+        "heading": "Image-Editor",
+        "content": "This is a react app in which you upload multiple images, then you edit only one of the image and the app will edit the rest of the images for you.",
+        "date": "10 Jan 2021",
+        "link": "https://github.com/Naman-1234/Image-Editor"
     }
 ]

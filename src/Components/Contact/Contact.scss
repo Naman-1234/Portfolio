@@ -29,7 +29,7 @@
             height: 100%;
 
 
-            input, textarea, .submit_button{
+            input, textarea, button{
               font-family: $content-font-family; 
               border-radius: 10px;
               outline:none;
@@ -52,6 +52,7 @@
               margin: 0 auto;
               button {
               font-size: 25px;
+              font-family: $content-font-family; 
               padding: 5px 70px 5px 70px;
               cursor: pointer;
               }
@@ -61,6 +62,9 @@
         &__right {
             flex: 1;
             background-color: $front-content-color;
+            @include customFlex(center,center,column);
+            color: #fff;
+            font-size: 50px;
         }
     }
     .down {

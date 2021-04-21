@@ -1,38 +1,29 @@
 [
     {
-        "src": "images/cpp.jpg"
+        "src": "images/c.png"
     },
     {
         "src": "images/cpp.jpg"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/java.png"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/python.png"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/javascript.png"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/html.png"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/css.png"
     },
     {
-        "src": "images/cpp.jpg"
+        "src": "images/react.png"
     },
     {
-        "src": "images/cpp.jpg"
-    },
-    {
-        "src": "images/cpp.jpg"
-    },
-    {
-        "src": "images/cpp.jpg"
-    },
-    {
-        "src": "images/cpp.jpg"
+        "src": "images/git.png"
     }
 ]

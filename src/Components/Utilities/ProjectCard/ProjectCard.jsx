@@ -10,6 +10,7 @@ function ProjectCard(props) {
             <h3 className="date">{para.date}</h3>
             <h1>{para.heading}</h1>
             <p>{para.content}</p>
+            <a href={para.link} target="_blank" rel="noreferrer"><img src="images/github.png" alt="Github Repo"></img> </a>
         </div>
     )
 }
