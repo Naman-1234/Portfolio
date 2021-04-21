@@ -44,6 +44,13 @@ background-size: contain;
   grid-template-rows: auto;
 }
 
+@mixin customFlex($justify:"stretch", $align:"stretch", $direction:"row") {
+display:flex;
+flex-direction:  $direction;
+align-items:$align;
+justify-content: $justify;
+}
+
 
 //Coming on to responsive part
 $breakpoints: (

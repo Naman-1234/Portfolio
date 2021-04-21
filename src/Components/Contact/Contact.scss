@@ -5,9 +5,9 @@
   font-weight: bolder;
 }
 .contact {
-  height: 100vh;
-  padding-left: 150px;
-  padding-top: 15px;
+  min-height: 100vh;
+  height: auto;
+  padding: 15px 0px 0px 150px;
   font-family: $content-font-family;
   &__heading {
     font-size: 30px;
@@ -18,42 +18,33 @@
       
     .up {
         height: 65vh;
-        display: flex;
+        @include customFlex();
         margin: 0 auto;
         width: 65%;
         font-size: 1.7em;
         &__left {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly ;
+            @include customFlex(space-evenly, stretch, column);
             background-color:$content-background-color;
             height: 100%;
 
 
-            input{
+            input, textarea, .submit_button{
               font-family: $content-font-family; 
               border-radius: 10px;
-              outline:0;
+              outline:none;
               border: 0;
               padding: 10px 30px 10px 30px;
             }
             .name , .email {
-              display: flex;
-              align-items: center;
-              justify-content: space-around;
+              @include customFlex(space-around,center);
             }
             .description_label {
              margin: 0 auto;
             }
             .description__text {
-          display: grid;
-          place-items: center;
+          @include centeredGrid();
           textarea {
-            font-family: $content-font-family; 
-            outline:none;
-            border: 0;
-            border-radius: 10px;
             padding: 17px 30px 17px 30px;
           }
             }
@@ -61,10 +52,6 @@
               margin: 0 auto;
               button {
               font-size: 25px;
-              font-family: $content-font-family; 
-              outline:none;
-              border: 0;
-              border-radius: 10px;
               padding: 5px 70px 5px 70px;
               cursor: pointer;
               }
