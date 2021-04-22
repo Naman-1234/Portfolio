@@ -8,6 +8,7 @@
   min-height: 100vh;
   height: auto;
   padding: 15px 0px 0px 150px;
+  
   font-family: $content-font-family;
   &__heading {
     font-size: 30px;
@@ -15,7 +16,6 @@
   }
 
   &__description {
-      
     .up {
         height: 65vh;
         @include customFlex();
@@ -24,8 +24,10 @@
         font-size: 1.7em;
         &__left {
             flex: 1;
+            border-radius: 5px 0px 0px 5px;
             @include customFlex(space-evenly, stretch, column);
-            background-color:$content-background-color;
+            background-color: $front-content-color;
+            color: #fff;
             height: 100%;
 
             input {
@@ -88,6 +90,7 @@
         }
         &__right {
             flex: 1;
+            border-radius: 0px 5px 5px 0px;
             background-color: $front-content-color;
             @include customFlex(center,center,column);
             color: #fff;
