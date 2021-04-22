@@ -28,7 +28,34 @@
             background-color:$content-background-color;
             height: 100%;
 
+            input {
+              display: inline-block;
+              width: 70%;
+            }
+            input:hover, textarea:hover, input:focus , textarea:focus {
+            animation: inputAnimation;
+            animation-duration: 1s; 
+            animation-fill-mode: forwards;
+            }
+            @keyframes inputAnimation {
 
+              25% {
+                border: 1px solid #000;
+              }
+              50% {
+                border: 1.5px solid #000;
+              }
+              75% {
+                border: 2px solid #000;
+              }
+              100% {
+                border: 2.5px solid #000;
+              }
+            }
+            textarea {
+              display: inline-block;
+              width: 90%;
+            }
             input, textarea, button{
               font-family: $content-font-family; 
               border-radius: 10px;
