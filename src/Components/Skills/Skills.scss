@@ -10,6 +10,14 @@
     &__heading {
         font-family: $heading-font-family;
         font-size: 30px;
+
+        @include mq(400px) {
+            font-size: 15px;
+        }
+
+        @include mq(640px) {
+            font-size: 20px;
+        }
     }
 
     &__description {
@@ -19,6 +27,12 @@
             width: 150px;
             border-radius: 50%;
             object-fit:fill;
+
+            
         }
+
+        
     }
+
+    
 }
