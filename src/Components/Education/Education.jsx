@@ -13,6 +13,10 @@ function Education() {
         <h1>Education</h1>
       </div>
       <div className="education__description">
+      <div className="description__left">
+      <img src="images/Education2.png" alt="Education" />
+      </div>
+      <div className="description__right">
         {educationData.map((data, index) => {
           return (
             <EducationCard
@@ -24,6 +28,7 @@ function Education() {
             />
           );
         })}
+        </div>
       </div>
     </div>
   );

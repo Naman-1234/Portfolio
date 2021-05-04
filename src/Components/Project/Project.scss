@@ -11,6 +11,13 @@
   &__heading {
     font-family: $heading-font-family;
     font-size: 30px;
+    @include mq(400px) {
+      font-size: 15px;
+  }
+
+  @include mq(640px) {
+      font-size: 20px;
+  }
   }
   &__description {
     min-height: 100vh;
@@ -95,4 +102,15 @@
   .timeline ul li:hover::before {
     background-color: $front-content-color;
   }
+}
+
+@media only screen and (min-width:400px) and(max-width:767px)
+{
+ .timeline{
+  background-color: aquamarine;
+  min-width: 350px;
+  margin: auto;
+  margin-left: 100px;
+
+ }   
 }

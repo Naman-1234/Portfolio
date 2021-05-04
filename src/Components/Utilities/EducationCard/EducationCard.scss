@@ -5,18 +5,17 @@
 .education-card {
     @include spaceAroundFlex();
     height:160px;
-    width: 80vw;
-    background-color: $pickle-color;
+    background-color: $content-background-color;
     font-family: $content-font-family;
     border-radius: 20px;
     padding-left: 25px;
     color: $navbar-text-color;
 
     .heading2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .heading4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

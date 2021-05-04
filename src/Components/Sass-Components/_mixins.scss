@@ -41,7 +41,7 @@ background-size: contain;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   row-gap: 30px;
-  grid-template-rows: auto;
+  grid-template-rows: auto
 }
 
 @mixin customFlex($justify:"stretch", $align:"stretch", $direction:"row") {
