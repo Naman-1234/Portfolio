@@ -10,11 +10,16 @@ function Skills() {
             <h1>Skills</h1>
             </div>
             <div className="skills__description" data-aos="zoom-in-right" data-aos-duration="2000">
+            <div className="description__left">
+            <img src="images/Skills.png" alt="Skills" />
+            </div>
+            <div className="description__right">
             {
                 skillsLogos.map((src, index)=>{
                     return <img src={src.src} alt="logo" key={index} />
                 })
             }
+            </div>
             </div>
         </div>
     )
