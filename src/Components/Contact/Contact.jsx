@@ -34,10 +34,8 @@ function Contact() {
           </div>
 
           <div className="up__right">
-            <span>Would like to</span>
-            <span> hear from</span>
-            <span>You.</span>
-          </div>
+    <img src="images/Contact.png" alt="Contact"/>
+        </div>
         </div>
         <div className="down">
           <p>Made with ❤️ by Naman</p>
