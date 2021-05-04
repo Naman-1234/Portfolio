@@ -1,6 +1,6 @@
 # Table of Contents:
-- [About]()
-- [Getting Started]() 
+- [About](https://github.com/Naman-1234/Portfolio/blob/main/README.md#about)
+- [Getting Started](https://github.com/Naman-1234/Portfolio/blob/main/README.md#getting-started-with-create-react-app) 
 # About
 ## Tech-Stack Used
 - React
@@ -19,7 +19,7 @@
 - Type `git clone <link Copied>` 
 - Type `cd portfolio` to enter project folder.
 - Type `npm i` and then `npm start` to run locally.
-- For More Information go to [Getting Started Portion]()
+- For More Information go to [Getting Started Portion](https://github.com/Naman-1234/Portfolio/blob/main/README.md#getting-started-with-create-react-app)
 
 
 # Getting Started with Create React App
