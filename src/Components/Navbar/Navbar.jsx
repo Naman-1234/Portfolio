@@ -8,16 +8,16 @@ function Navbar() {
     <div className="navbar-container" data-aos="fade-right" data-duration="1000">
     <div className="navbar">
       <a href="#frontPage" className="navbar__link">
-        Home
+        <span>Home</span>
       </a>
       <a href="#educationPage" className="navbar__link">
-        Education
+        <span>Education</span>
       </a>
       <a href="#projectPage" className="navbar__link">
-        Projects  
+        <span>Projects</span>
       </a>
       <a href="#skillsPage" className="navbar__link">
-        Skills
+        <span>Skills</span>
       </a>
       <a href="#contactPage" className="navbar__link">
         <span>Contact</span>
