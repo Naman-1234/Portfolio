@@ -26,7 +26,7 @@
             flex: 1;
             border-radius: 5px 0px 0px 5px;
             @include customFlex(space-evenly, stretch, column);
-            background-color: $front-content-color;
+            background-color: $content-background-color;
             color: #fff;
             height: 100%;
 

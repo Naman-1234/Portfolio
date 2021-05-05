@@ -20,7 +20,7 @@
   }
   }
   &__description {
-    min-height: 100vh;
+    min-height: 90vh;
     height: auto;
     @include centeredFlex();
     .timeline {
@@ -33,8 +33,8 @@
         list-style: none;
 
         li {
-          padding: 20px;
-          background-color: $front-content-color;
+          padding:20px;
+          background-color: $orange-color;
           color: $white;
           border-radius: 10px;
           margin-bottom: 20px;
