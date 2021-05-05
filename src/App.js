@@ -15,7 +15,7 @@ function App() {
     const update = () => {
       setTimeout(() => {
         setloaded(true);
-      }, 800);
+      }, 1500);
     };
     update();
   });
@@ -23,7 +23,7 @@ function App() {
     <div>
       {!loaded ? (
         <div className="loader">
-          <Loader type="BallTriangle" color="#00BFFF" height={80} width={80} />
+          <Loader type="BallTriangle" color="#00BFFF" height={150} width={150} />
         </div>
       ) : (
         <div>

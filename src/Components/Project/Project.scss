@@ -34,7 +34,7 @@
 
         li {
           padding:20px;
-          background-color: $front-content-color;
+          background-color: rgba(56, 173, 45,.9);
           color: $white;
           border-radius: 10px;
           margin-bottom: 20px;
@@ -64,12 +64,14 @@
     width: 50%;
     position: relative;
     margin-bottom: 50px;
+    
   }
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
     border-radius: 20px 0px 20px 20px;
+    
   }
 
   .timeline ul li:nth-child(even) {
@@ -77,6 +79,7 @@
     clear: left;
     transform: translateX(30px);
     border-radius: 0px 20px 20px 20px;
+   
   }
   .timeline ul li::before {
     content: "";
