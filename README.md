@@ -11,6 +11,7 @@
 - Make responsive
 - Improve UI
 - Improve Illustrations
+- Introducing Dark-Theme 
 
 ## Running Locally
 - Go to Code Dropdown in Github Desktop
