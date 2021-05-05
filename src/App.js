@@ -13,7 +13,7 @@ function App() {
   const [loaded,setloaded] = useState(false);
   useEffect(() => {
     const update= ()=>{
-    // setTimeout(()=>{setloaded(true)},1500);
+    setTimeout(()=>{setloaded(true)},1500);
     }
     update();
   },);
