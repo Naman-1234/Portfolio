@@ -13,3 +13,12 @@ body {
     max-width: 100%;
     scroll-behavior: smooth;
 }
+
+.loader {
+    width:100vw;
+    height:100vh;
+    display: grid;
+    place-items: center;
+    z-index:99999;
+    background-color: #1e1f22;
+}
