@@ -2,15 +2,15 @@
 import React from 'react'
 import "./ProjectCard.scss";
 function ProjectCard(props) {
-    //! Look at this line output
-    const para = props.props;
-    console.log('Para is ',para);
+   const {heading, content, link} = props.props;
+   let date = props.props.date;
+   date=date.toUTCString();
     return (
         <div className="projectCard">
-            <h3 className="date">{para.date}</h3>
-            <h1>{para.heading}</h1>
-            <p>{para.content}</p>
-            <a href={para.link} target="_blank" rel="noreferrer"><img src="images/github.png" alt="Github Repo"></img> </a>
+            <h3 className="date">{date}</h3>
+            <h1>{heading}</h1>
+            <p>{content}</p>
+            <a href={link} target="_blank" rel="noreferrer"><img src="images/github.png" alt="Github Repo"></img> </a>
         </div>
     )
 }

@@ -1,9 +1,35 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "./Project.scss";
 import ProjectCard from "../Utilities/ProjectCard/ProjectCard";
-import projectData from "../../Data/Project.json";
-
+import axios from "axios";
 function Project() {
+  const [projectData, setProjectData] = useState([]);
+  const [showProjectData, setShowProjectData] = useState(false);
+
+  useEffect(() => {
+   const projectRepositories=['Image-Editor','BuildWebOnline','Portfolio','Sahaayak'];
+   axios.get("https://api.github.com/users/Naman-1234/repos?per_page=100").then(async (result)=>{
+     result=result.data;
+     //Filtering to get only those included in projectRepositories
+     result = await result.filter((repoName)=>{
+      return projectRepositories.includes(repoName.name);
+    })
+    //Taking out only name, description, Date of Creation and its github url
+    let repoDetails = await result.map((repo)=>{
+      const date = new Date(repo.created_at);
+      return {
+        heading:repo.name,
+        content:repo.description,
+        date:date,
+        link:repo.url
+      }
+    })
+      setProjectData(repoDetails);
+      setShowProjectData(true);
+   }).catch((err)=>{
+     throw new Error(err);
+   })
+  }, [])
   return (
     <div className="project" id="projectPage" >
       <div className="project__heading">
@@ -12,7 +38,7 @@ function Project() {
       <div className="project__description">
         <div className="timeline"  data-aos="flip-up" data-aos-duration="2000">
           <ul>
-            {projectData.map((src,index) => {
+            {showProjectData && projectData.map((src,index) => {
               return (
                 <li key={index} >
                   <ProjectCard props={src} />
