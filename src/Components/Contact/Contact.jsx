@@ -10,7 +10,7 @@ function Contact() {
       >
         <h1>Contact Me</h1>
       </div>
-      <div className="contact__description" data-aos="flip-right" data-aos-duration="2000">
+      <div className="contact__description" data-aos="zoom-in-right" data-aos-duration="2000">
         <div className="up">
           <div className="up__left">
             <div className="name">
