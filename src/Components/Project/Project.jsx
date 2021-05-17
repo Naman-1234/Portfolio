@@ -16,16 +16,22 @@ function Project() {
     })
     //Taking out only name, description, Date of Creation and its github url
     let repoDetails = await result.map((repo)=>{
-      const date = new Date(repo.created_at);
-      return {
-        heading:repo.name,
-        content:repo.description,
-        date:date,
-        link:repo.url
-      }
-    })
-      setProjectData(repoDetails);
-      setShowProjectData(true);
+      axios.get(`https://api.github.com/users/Naman-1234/${repo}/languages`).then(async (ans)=>{
+        const languages = await Object.keys(ans);
+        const date = new Date(repo.created_at);
+        return {
+          heading:repo.name,
+          content:repo.description,
+          date:date,
+          link:repo.url,
+          languages:languages
+        }
+      })
+        setProjectData(repoDetails);
+        setShowProjectData(true);
+      }).catch((err)=>{
+        console.log('Inside Languages Error');
+      })
    }).catch((err)=>{
      throw new Error(err);
    })

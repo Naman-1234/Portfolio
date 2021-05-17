@@ -30,10 +30,12 @@
                 margin: 0 auto;
                 width:80%;
                 height:80%;
+
             }
         }
         
         .description__right {
+            
             @include spaceAroundFlex();
             flex:1;
             padding-right:20px;
