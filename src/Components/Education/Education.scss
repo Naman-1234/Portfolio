@@ -1,45 +1,39 @@
-@import "../Sass-Components/Variables";
-@import "../Sass-Components/fonts";
-@import "../Sass-Components/mixins";
+@import '../Sass-Components/Variables';
+@import '../Sass-Components/fonts';
+@import '../Sass-Components/mixins';
 
 .education {
-    height:100vh;
-    padding-left: 150px;
-    padding-top:15px;
-    &__heading {
-        font-family: $heading-font-family;
-        font-size: 30px;
-        @media only screen and (min-width:400px) and (max-width:767px)
-        {
-            font-size: 15px;
-        }
-         @media only screen and (min-width:400px) and (max-width:767px)
-        {
-            font-size: 15px;
-        }
-
+  height: 100vh;
+  padding-left: 150px;
+  &__heading {
+    font-family: $heading-font-family;
+    font-size: 30px;
+    color: $white;
+    @media only screen and (min-width: 400px) and (max-width: 767px) {
+      font-size: 15px;
     }
-    &__description {
-        height:80vh;
-        @include customFlex();
-        .description__left {
-            flex:1;
-            display: grid;
-            place-items: center;
-            img {  
-                margin: 0 auto;
-                width:80%;
-                height:80%;
-
-            }
-        }
-        
-        .description__right {
-            
-            @include spaceAroundFlex();
-            flex:1;
-            padding-right:20px;
-        }
-
+    @media only screen and (min-width: 400px) and (max-width: 767px) {
+      font-size: 15px;
     }
+  }
+  &__description {
+    height: 80vh;
+    @include customFlex();
+    .description__left {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      img {
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    .description__right {
+      @include spaceAroundFlex();
+      flex: 1;
+      padding-right: 20px;
+    }
+  }
 }

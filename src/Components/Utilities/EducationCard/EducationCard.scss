@@ -1,21 +1,22 @@
-@import "../../Sass-Components/fonts";
-@import "../../Sass-Components/Variables";
-@import "../../Sass-Components/mixins";
+@import '../../Sass-Components/fonts';
+@import '../../Sass-Components/Variables';
+@import '../../Sass-Components/mixins';
 
 .education-card {
-    @include spaceAroundFlex();
-    height:160px;
-    background-color: $content-background-color;
-    font-family: $content-font-family;
-    border-radius: 20px;
-    padding-left: 25px;
-    color: $navbar-text-color;
+  @include spaceAroundFlex();
+  height: 160px;
+  //   background-color: $content-background-color;
+  background-image: linear-gradient(65deg, rgb(117, 116, 182), rgb(3, 0, 177));
+  font-family: $content-font-family;
+  border-radius: 20px;
+  padding-left: 25px;
+  color: $white;
 
-    .heading2 {
-        font-size: 30px;
-    }
+  .heading2 {
+    font-size: 30px;
+  }
 
-    .heading4 {
-        font-size: 18px;
-    }
+  .heading4 {
+    font-size: 18px;
+  }
 }
