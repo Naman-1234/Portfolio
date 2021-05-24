@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
-import "./Project.scss";
-import ProjectCard from "../Utilities/ProjectCard/ProjectCard";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import './Project.scss';
+import ProjectCard from '../Utilities/ProjectCard/ProjectCard';
+import axios from 'axios';
 function Project() {
   const [projectData, setProjectData] = useState([]);
   const [showProjectData, setShowProjectData] = useState(false);
 
   useEffect(() => {
     const projectRepositories = [
-      "Image-Editor",
-      "BuildWebOnline",
-      "Portfolio",
-      "Sahaayak",
+      'Image-Editor',
+      'BuildWebOnline',
+      'Portfolio',
+      'Sahaayak',
     ];
     axios
-      .get("https://api.github.com/users/Naman-1234/repos?per_page=100")
+      .get('https://api.github.com/users/Naman-1234/repos?per_page=100')
       .then(async (result) => {
         result = result.data;
         //Filtering to get only those included in projectRepositories
@@ -32,28 +32,20 @@ function Project() {
             name: repo.name,
           };
         });
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
         setProjectData(repoDetails);
         setShowProjectData(true);
       })
       .catch((err) => {
-<<<<<<< HEAD
-        console.log(err);
-=======
         throw new Error(err);
->>>>>>> origin/main
       });
   }, []);
   return (
-    <div className="project" id="projectPage">
-      <div className="project__heading">
+    <div className='project' id='projectPage'>
+      <div className='project__heading'>
         <h1>Projects</h1>
       </div>
-      <div className="project__description">
-        <div className="timeline" data-aos="flip-up" data-aos-duration="2000">
+      <div className='project__description'>
+        <div className='timeline' data-aos='flip-up' data-aos-duration='2000'>
           <ul>
             {showProjectData &&
               projectData.map((src, index) => {
