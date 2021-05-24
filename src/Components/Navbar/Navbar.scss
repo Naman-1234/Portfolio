@@ -1,31 +1,35 @@
-@import "../Sass-Components/fonts";
-@import "../Sass-Components/Variables";
-@import "../Sass-Components/mixins";
+@import '../Sass-Components/fonts';
+@import '../Sass-Components/Variables';
+@import '../Sass-Components/mixins';
 
 .navbar-container {
   @include centeredGrid();
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  left: 10px;
+  width: 100vw;
+  position: absolute;
+  // position: fixed;
+  top: 10px;
+  display: grid;
+  place-items: center;
 }
 .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: $front-content-color;
-  height: 60vh;
-  width: 120px;
-  border-radius: 25px;
+  // background-color: $front-content-color;
+  // background-image: linear-gradient(to right, #506bf8, #1139cb);
+  // background-color: #090c24;
+  height: 10vh;
+  border-radius: 15px;
+  width: 80%;
 
   &__link {
-  @include centeredGrid();
-  font-family: $navbar-font-family;
-  text-decoration: none;
-  color: $navbar-text-color;
-  font-size: 21px;
-  font-weight: 500;
-  margin: 0 10px 0 10px;
+    @include centeredGrid();
+    font-family: $navbar-font-family;
+    text-decoration: none;
+    color: $navbar-text-color;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 10px 0 10px;
   }
 }
