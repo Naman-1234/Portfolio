@@ -1,6 +1,6 @@
-@import "../Sass-Components/Variables";
-@import "../Sass-Components/fonts";
-@import "../Sass-Components/mixins";
+@import '../Sass-Components/Variables';
+@import '../Sass-Components/fonts';
+@import '../Sass-Components/mixins';
 * {
   font-weight: bolder;
 }
@@ -8,106 +8,116 @@
   min-height: 100vh;
   height: auto;
   padding: 15px 0px 0px 150px;
-  
+
   font-family: $content-font-family;
   &__heading {
     font-size: 30px;
     font-family: $heading-font-family;
+    color: $white;
   }
 
   &__description {
     .up {
-        height: 65vh;
-        @include customFlex();
-        margin: 0 auto;
-        width: 65%;
-        font-size: 1.7em;
-        &__left {
-            flex: 1;
-            border-radius: 5px 0px 0px 5px;
-            @include customFlex(space-evenly, stretch, column);
-            background-color: $content-background-color;
-            color: #fff;
-            height: 100%;
+      height: 65vh;
+      @include customFlex();
+      margin: 0 auto;
+      width: 65%;
+      font-size: 1.7em;
+      &__left {
+        flex: 1;
+        border-radius: 5px 0px 0px 5px;
+        @include customFlex(space-evenly, stretch, column);
+        // background-color: $content-background-color;
+        background-image: linear-gradient(
+          65deg,
+          rgb(3, 0, 177),
+          rgb(117, 116, 182)
+        );
+        color: $white;
+        height: 100%;
 
-            input {
-              display: inline-block;
-              width: 50%;
-            }
-            input:hover, textarea:hover, input:focus , textarea:focus {
-            animation: inputAnimation;
-            animation-duration: 1s; 
-            animation-fill-mode: forwards;
-            }
-            @keyframes inputAnimation {
-
-              25% {
-                border: 1px solid #000;
-              }
-              50% {
-                border: 1.5px solid #000;
-              }
-              75% {
-                border: 2px solid #000;
-              }
-              100% {
-                border: 2.5px solid #000;
-              }
-            }
-            textarea {
-              display: inline-block;
-              width: 80%;
-            }
-            input, textarea, button{
-              font-family: $content-font-family; 
-              border-radius: 10px;
-              outline:none;
-              border: 0;
-              padding: 10px 30px 10px 30px;
-            }
-            .name , .email {
-              @include customFlex(space-around,center);
-            }
-            .description_label {
-             margin: 0 auto;
-            }
-            .description__text {
+        input {
+          display: inline-block;
+          width: 50%;
+        }
+        input:hover,
+        textarea:hover,
+        input:focus,
+        textarea:focus {
+          animation: inputAnimation;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        @keyframes inputAnimation {
+          25% {
+            border: 1px solid #000;
+          }
+          50% {
+            border: 1.5px solid #000;
+          }
+          75% {
+            border: 2px solid #000;
+          }
+          100% {
+            border: 2.5px solid #000;
+          }
+        }
+        textarea {
+          display: inline-block;
+          width: 80%;
+        }
+        input,
+        textarea,
+        button {
+          font-family: $content-font-family;
+          border-radius: 10px;
+          outline: none;
+          border: 0;
+          padding: 10px 30px 10px 30px;
+        }
+        .name,
+        .email {
+          @include customFlex(space-around, center);
+        }
+        .description_label {
+          margin: 0 auto;
+        }
+        .description__text {
           @include centeredGrid();
           textarea {
             padding: 17px 30px 17px 30px;
           }
-            }
-            .submit_button {
-              margin: 0 auto;
-              button {
-              font-size: 25px;
-              font-family: $content-font-family; 
-              padding: 5px 70px 5px 70px;
-              cursor: pointer;
-              }
-            }
-
         }
-        &__right {
-          flex:1.5;
-          img {
-            width:100%;
-            height:100%;
+        .submit_button {
+          margin: 0 auto;
+          button {
+            font-size: 25px;
+            font-family: $content-font-family;
+            padding: 5px 70px 5px 70px;
+            cursor: pointer;
           }
         }
+      }
+      &__right {
+        flex: 1.5;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
     .down {
-       height: 15vh;
-        position: relative;
-        p {
-           text-align: center;
-           position: absolute;
-           bottom: 0;
-           left: 50%;
-           transform: translateX(-50%);
-           color:$project-card-color;
-           font-size: 40px;
-        }
+      height: 15vh;
+      position: relative;
+      p {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $white;
+        font-size: 40px;
+      }
     }
   }
 }
