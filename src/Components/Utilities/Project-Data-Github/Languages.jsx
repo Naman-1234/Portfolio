@@ -1,27 +1,27 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import './Languages.scss';
 function Languages(props) {
-  const [languages, setLanguage] = useState(["Image-Editor", "Sahaayak"]);
+  const [languages, setLanguage] = useState([]);
   const [showLanguage, setShowLanguage] = useState(false);
   useEffect(() => {
     const repo = props.repo;
     console.log(repo);
     axios
-      .get(`https://api.github.com/users/Naman-1234/${repo}/languages`)
+      .get(`https://api.github.com/repos/Naman-1234/${repo}/languages`)
       .then((result) => {
-        console.log(result);
+        const data = Object.keys(result.data);
+        setLanguage(data);
         setShowLanguage(true);
       })
       .catch((err) => {
-        throw new Error(err);
+        console.log(err);
       });
   }, []);
   return (
     <>
-      <h1>HI there</h1>
       {languages.map((language) => {
-        return <h4>language</h4>;
+        return <span>{language}</span>;
       })}
     </>
   );

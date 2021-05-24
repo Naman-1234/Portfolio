@@ -32,12 +32,19 @@ function Project() {
             name: repo.name,
           };
         });
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
         setProjectData(repoDetails);
         setShowProjectData(true);
       })
       .catch((err) => {
+<<<<<<< HEAD
         console.log(err);
+=======
+        throw new Error(err);
+>>>>>>> origin/main
       });
   }, []);
   return (
