@@ -7,7 +7,7 @@ function ProjectCard(props) {
   let date = props.props.date;
   date = date.toUTCString();
   return (
-    <div className='projectCard'>
+    <div className='projectCard' data-aos='zoom-in' data-duration='2000'>
       <h3 className='date'>{date}</h3>
       <h1>{heading}</h1>
       <p>{content}</p>

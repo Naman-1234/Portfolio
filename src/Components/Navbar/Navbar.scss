@@ -2,20 +2,12 @@
 @import '../Sass-Components/Variables';
 @import '../Sass-Components/mixins';
 
-.navbar-container {
-  @include centeredGrid();
-  width: 100vw;
-  position: absolute;
-  // position: fixed;
-  top: 10px;
-  display: grid;
-  place-items: center;
-}
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin: auto;
   // background-color: $front-content-color;
   // background-image: linear-gradient(to right, #506bf8, #1139cb);
   // background-color: #090c24;

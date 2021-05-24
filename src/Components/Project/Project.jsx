@@ -45,7 +45,7 @@ function Project() {
         <h1>Projects</h1>
       </div>
       <div className='project__description'>
-        <div className='timeline' data-aos='flip-up' data-aos-duration='2000'>
+        <div className='timeline'>
           <ul>
             {showProjectData &&
               projectData.map((src, index) => {
