@@ -1,10 +1,11 @@
-@import "../Sass-Components/Variables";
-@import "../Sass-Components/fonts";
-@import "../Sass-Components/mixins";
+@import '../Sass-Components/Variables';
+@import '../Sass-Components/fonts';
+@import '../Sass-Components/mixins';
 
 .front {
   display: flex;
   height: 100vh;
+  background-image: linear-gradient(to right, '#2d3547', '#121b4f');
   &__left {
     flex: 0.65;
     @include centeredGrid();
@@ -44,7 +45,6 @@
       }
     }
   }
-
 
   &__right {
     flex: 0.35;
