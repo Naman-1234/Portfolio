@@ -23,7 +23,7 @@ function FrontPage() {
           <div className='contentright'>
             <div className='content__myimage'>
               <img
-                src='images/profile.jpg'
+                src='images/profile_without_bg.png'
                 alt='My Profile'
                 className='myimg'
               ></img>
