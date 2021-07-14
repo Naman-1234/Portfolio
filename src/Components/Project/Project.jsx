@@ -41,9 +41,9 @@ function Project() {
   }, []);
   return (
     <div className='project' id='projectPage'>
-      <div className='project__heading'>
+      {/* <div className='project__heading'>
         <h1>Projects</h1>
-      </div>
+      </div> */}
       <div className='project__description'>
         <div className='timeline'>
           <ul>

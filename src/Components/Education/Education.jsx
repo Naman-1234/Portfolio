@@ -5,13 +5,13 @@ const educationData = require('../../Data/EducationData.json');
 function Education() {
   return (
     <div className='education' id='educationPage'>
-      <div
+      {/* <div
         className='education__heading'
         data-aos='zoom-in-right'
         data-duration='2000'
       >
         <h1>Education</h1>
-      </div>
+      </div> */}
       <div className='education__description'>
         <div className='description__left'>
           <img src='images/Education2_without_bg.png' alt='Education' />

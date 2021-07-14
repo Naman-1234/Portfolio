@@ -5,7 +5,7 @@
   font-weight: bolder;
 }
 .contact {
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
   padding: 15px 0px 0px 150px;
 
@@ -17,6 +17,7 @@
   }
 
   &__description {
+    margin-top: 50px;
     .up {
       height: 65vh;
       @include customFlex();

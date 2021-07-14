@@ -3,7 +3,7 @@
 @import '../Sass-Components/mixins';
 
 .education {
-  height: 100vh;
+  height: 80vh;
   padding-left: 150px;
   &__heading {
     font-family: $heading-font-family;
@@ -17,6 +17,7 @@
     }
   }
   &__description {
+    margin-top: 50px;
     height: 80vh;
     @include customFlex();
     .description__left {

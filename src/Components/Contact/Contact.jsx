@@ -3,13 +3,13 @@ import './Contact.scss';
 function Contact() {
   return (
     <div className='contact' id='contactPage'>
-      <div
+      {/* <div
         className='contact__heading'
         data-aos='zoom-in-right'
         data-duration='2000'
       >
         <h1>Contact Me</h1>
-      </div>
+      </div> */}
       <div
         className='contact__description'
         data-aos='zoom-in-right'
