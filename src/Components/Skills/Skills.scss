@@ -4,7 +4,7 @@
 
 .skills {
   // min-height: 100vh;
-  height: 100vh;
+  height: 80vh;
   padding-left: 150px;
   &__heading {
     font-family: $heading-font-family;
@@ -46,6 +46,12 @@
         grid-template-rows: auto;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
+      }
+      .skills-heading {
+        font-family: $navbar-font-family;
+        font-size: 30px;
+        color: $white;
+        margin-bottom: 10px;
       }
     }
   }

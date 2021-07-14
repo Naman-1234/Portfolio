@@ -12,9 +12,9 @@ const skillsTitle = [
 function Skills() {
   return (
     <div className='skills' id='skillsPage'>
-      <div className='skills__heading'>
+      {/* <div className='skills__heading'>
         <h1>Skills</h1>
-      </div>
+      </div> */}
       <div
         className='skills__description'
         data-aos='zoom-in-right'
@@ -37,7 +37,7 @@ function Skills() {
           {skillsLogos.map((arr, index) => {
             return (
               <div>
-                <h1>{skillsTitle[index]}</h1>
+                <h1 className='skills-heading'>{skillsTitle[index]}</h1>
 
                 <div className='skillsrow'>
                   {arr.map((skill, index2) => {
