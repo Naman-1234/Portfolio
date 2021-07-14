@@ -16,7 +16,7 @@ function FrontPage() {
             </div>
             <div className='content__description'>
               <span>Hello, My Name is Naman </span>
-              <span>Kalra, A 2nd Year </span>
+              <span>Kalra, A 3rd Year </span>
               <span> Undergraduate at IIITV.</span>
             </div>
           </div>

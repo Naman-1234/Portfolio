@@ -3,6 +3,12 @@ import './Skills.scss';
 
 const skillsLogos = require('../../Data/Skills.json');
 console.log('Skillslogo', skillsLogos);
+const skillsTitle = [
+  'Languages',
+  'Frameworks and Libraries',
+  'Tools',
+  'Databases',
+];
 function Skills() {
   return (
     <div className='skills' id='skillsPage'>
@@ -18,7 +24,7 @@ function Skills() {
           <img src='images/Skills_without_bg.png' alt='Skills' />
         </div>
         <div className='description__right'>
-          {skillsLogos.map((src, index) => {
+          {/* {skillsLogos.map((src, index) => {
             return (
               <img
                 src={src.src}
@@ -26,6 +32,26 @@ function Skills() {
                 key={index}
                 className='language-img'
               />
+            );
+          })} */}
+          {skillsLogos.map((arr, index) => {
+            return (
+              <div>
+                <h1>{skillsTitle[index]}</h1>
+
+                <div className='skillsrow'>
+                  {arr.map((skill, index2) => {
+                    return (
+                      <img
+                        src={skill.src}
+                        alt='Logo'
+                        key={index2}
+                        className='language-img'
+                      />
+                    );
+                  })}
+                </div>
+              </div>
             );
           })}
         </div>

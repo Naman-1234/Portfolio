@@ -3,10 +3,9 @@
 @import '../Sass-Components/Variables';
 
 .skills {
-  min-height: 100vh;
+  // min-height: 100vh;
   height: 100vh;
   padding-left: 150px;
-  padding-top: 15px;
   &__heading {
     font-family: $heading-font-family;
     font-size: 30px;
@@ -24,7 +23,7 @@
     @include customFlex();
 
     .description__left {
-      flex: 1.5;
+      flex: 1;
       display: grid;
       place-items: center;
 
@@ -36,13 +35,17 @@
     .description__right {
       flex: 1;
       padding-top: 40px;
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(4, 1fr);
+
       img {
         width: 100px;
         height: 100px;
         border-radius: 15px;
+      }
+      .skillsrow {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
       }
     }
   }

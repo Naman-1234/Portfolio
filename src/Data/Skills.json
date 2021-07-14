@@ -1,29 +1,52 @@
 [
+  [
     {
-        "src": "images/c.png"
+      "src": "images/c.png"
     },
     {
-        "src": "images/cpp.jpg"
+      "src": "images/cpp.jpg"
     },
     {
-        "src": "images/java.png"
+      "src": "images/java.png"
     },
     {
-        "src": "images/python.png"
-    },
-    {
-        "src": "images/javascript.png"
-    },
-    {
-        "src": "images/html.png"
-    },
-    {
-        "src": "images/css.png"
-    },
-    {
-        "src": "images/react.png"
-    },
-    {
-        "src": "images/git.png"
+      "src": "images/javascript.png"
     }
+  ],
+  [
+    {
+      "src": "images/react.svg"
+    },
+    {
+      "src": "images/expressjs.svg"
+    },
+    {
+      "src": "images/nodejs.svg"
+    },
+    {
+      "src": "images/bootstrap.svg"
+    }
+  ],
+  [
+    {
+      "src": "images/git.svg"
+    },
+    {
+      "src": "images/vscode.svg"
+    },
+    {
+      "src": "images/github.svg"
+    },
+    {
+      "src": "images/hyper.svg"
+    }
+  ],
+  [
+    {
+      "src": "images/mongodb.svg"
+    },
+    {
+      "src": "images/mysql.svg"
+    }
+  ]
 ]
