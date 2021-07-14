@@ -1,0 +1,64 @@
+[
+  {
+    "heading": "BuildWebOnline",
+    "explanation": [
+      "📌 This is an web app consisting of several text Editors specifically for HTML,CSS and JavaScript.",
+      "📌 Real Time Editor and Output makes front Web Development absorbing and peaceful.",
+      "📌 Neither boilerplate code nor linking files is required. You can start coding right away. 😇"
+    ],
+    "techStack": [
+      "Reactjs",
+      "Material-UI",
+      "Sass",
+      "Nodejs",
+      "expressJs",
+      "mongodb",
+      "mongoose",
+      "Jest"
+    ]
+  },
+  {
+    "heading": "Image-Editor",
+    "explanation": [
+      "📌 Image-Editor as its name suggests is an image editor.",
+      "📌It lets you edit multiple photos on the basis on one you edit"
+    ],
+    "techStack": ["Reactjs", "Blobs", "CSS", "eslint"]
+  },
+  {
+    "heading": "Bank-Management-System",
+    "explanation": [
+      "📌 This is a Bank Management System designed by using Programming Approach of Object Oriented Paradigm.",
+      "📌 This uses Java as its Programming Language.",
+      "📌 Java Swing Library is being used to Provide GUI(Graphical User Interface) which is acting as a frontend of the application.",
+      "📌 File Management System is being used to store data.",
+      "📌 Designing of Classes can be illustrated using UML, Class diagrams and Sequential Diagrams. Please find them here."
+    ],
+    "techStack": ["Java", "OOPS", "Java-Swing"]
+  },
+  {
+    "heading": "Sahaayak",
+    "explanation": [
+      "Sahaayak is an online platform which is enabled with certain features and valuable propects to improvise the traditional as well as virtual learning mode of education.",
+      "This platform performs certain tasks, Some of them are listed below:",
+
+      "📌 An Institute can setup an admin to take overall power to maintain a web system.",
+      "📌 An Instructor can register himself via admin assist and will be mailed with proper credentials once registered.",
+      "📌 Instructor can add lectures included with videos ,3D models, images or any element or resource which can be used for Rich text formatting can be used by instructor.",
+      "📌 An whole page is dedicated for creation and management of lecture by Instructor.",
+      "📌 Students can access all lectures at once, separated subject wise in order to provide convenience and decrease time wastage in finding lectures or resources sent by Instructor.",
+      "📌 An whole page is dedicated to each lecture made by instructor.",
+      "📌 3D platform integrated with every lecture to understand concepts via 3d models.",
+      "📌 Students can ask doubt in every lecture through Doubt button included in every lecture, His doubt will the mailed to faculty responsible for creating that particular lecture on which doubt raised along with that lecture."
+    ],
+    "techStack": [
+      "expressjs",
+      "nodejs",
+      "three.js",
+      "echoAr",
+      "ejs",
+      "mongodb",
+      "mongoose"
+    ]
+  }
+]

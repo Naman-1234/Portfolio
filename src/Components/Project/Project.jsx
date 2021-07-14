@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './Project.scss';
 import ProjectCard from '../Utilities/ProjectCard/ProjectCard';
 import axios from 'axios';
+import projectstaticData from '../../Data/projectStaticData.json';
 function Project() {
   const [projectData, setProjectData] = useState([]);
   const [showProjectData, setShowProjectData] = useState(false);
-
   useEffect(() => {
     const projectRepositories = [
       'Image-Editor',
       'BuildWebOnline',
-      'Portfolio',
+      'Bank-Management-System',
       'Sahaayak',
     ];
     axios
@@ -24,14 +24,20 @@ function Project() {
         //Taking out only name, description, Date of Creation and its github url
         let repoDetails = await result.map((repo) => {
           const date = new Date(repo.created_at);
+          const projectStaticDetails = projectstaticData.filter(
+            (data) => data.heading === repo.name
+          );
           return {
             heading: repo.name,
-            content: repo.description,
+            // content: repo.description,
+            content: projectStaticDetails[0]?.explanation,
             date: date,
             link: repo.url,
             name: repo.name,
+            techStack: projectStaticDetails[0]?.techStack,
           };
         });
+        console.log(projectstaticData);
         setProjectData(repoDetails);
         setShowProjectData(true);
       })
@@ -46,11 +52,11 @@ function Project() {
       </div> */}
       <div className='project__description'>
         <div className='timeline'>
-          <ul>
+          <ul className='projectList'>
             {showProjectData &&
               projectData.map((src, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} className='listitem'>
                     <ProjectCard props={src} />
                   </li>
                 );
