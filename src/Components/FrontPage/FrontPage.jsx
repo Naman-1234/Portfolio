@@ -34,7 +34,7 @@ function FrontPage() {
       {/* Right Part of Front Page starts from here */}
       <div className='front__right'>
         <div className='socialLinks'>
-          <a href='/'>
+          {/* <a href='/'>
             <img
               src='images/instagram.png'
               alt='Instagram Logo'
@@ -47,15 +47,15 @@ function FrontPage() {
               alt='Facebook Logo'
               className='socialLinks__images'
             />
-          </a>
-          <a href='/'>
+          </a> */}
+          <a href='https://github.com/Naman-1234'>
             <img
               src='images/github.png'
               alt='Github logo'
               className='socialLinks__images'
             />
           </a>
-          <a href='/'>
+          <a href='https://www.linkedin.com/in/naman-kalra-9192571aa/'>
             <img
               src='images/linkedin.png'
               alt='Linkedin Logo'

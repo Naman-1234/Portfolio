@@ -4,7 +4,8 @@
 
 .front {
   display: flex;
-  height: 100vh;
+  margin-top: 50px;
+  height: 80vh;
   max-width: 100vw;
   &__left {
     flex: 0.65;
@@ -53,7 +54,8 @@
 
     .socialLinks {
       @include spaceAroundEndFlex();
-      height: 40%;
+      margin-top: -100px;
+      height: 30%;
       width: 95%;
 
       &__images {
