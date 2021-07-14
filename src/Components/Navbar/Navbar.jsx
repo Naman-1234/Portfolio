@@ -13,6 +13,9 @@ function Navbar() {
       <Link to='/education' className='navbar__link'>
         <span>Education</span>
       </Link>
+      <Link to='/achievements' className='navbar__link'>
+        <span>Achievements</span>
+      </Link>
       <Link to='/projects' className='navbar__link'>
         <span>Projects</span>
       </Link>
