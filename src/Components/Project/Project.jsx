@@ -46,14 +46,6 @@ function Project() {
           };
         });
 
-        //Correcting github Links
-        // repoDetails = repoDetails.map((link) => {
-        //   const linkString = link.toString();
-        //   linkString.replace(
-        //     'https://api.github.com/repos/',
-        //     'https://github.com/'
-        //   );
-        // });
         await repoDetails.sort(compare);
         setProjectData(repoDetails);
         setShowProjectData(true);
