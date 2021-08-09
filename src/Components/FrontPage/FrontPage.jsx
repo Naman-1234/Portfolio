@@ -57,8 +57,15 @@ function FrontPage() {
           </a>
           <a href='https://www.linkedin.com/in/naman-kalra-9192571aa/'>
             <img
-              src='images/linkedin.png'
+              src='images/linkedinjpg.png'
               alt='Linkedin Logo'
+              className='socialLinks__images'
+            />
+          </a>
+          <a href='https://linktr.ee/NamanKalra'>
+            <img
+              src='images/linktree.png'
+              alt='Linktree for Publications'
               className='socialLinks__images'
             />
           </a>

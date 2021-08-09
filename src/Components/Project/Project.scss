@@ -36,12 +36,15 @@
 
         li {
           padding: 20px;
-          // background-color: rgba(56, 173, 45, 0.9);
+          background-color: rgba(56, 173, 45, 0.9);
           background-image: linear-gradient(
             65deg,
             rgb(117, 116, 182),
             rgb(3, 0, 177)
           );
+          // background-image: url('http://localhost:3000/images/projectImages/sahaayak.png');
+          background-repeat: no-repeat;
+          background-size: cover;
           color: $white;
           border-radius: 10px;
           margin-bottom: 20px;

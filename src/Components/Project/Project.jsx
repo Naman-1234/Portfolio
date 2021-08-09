@@ -8,10 +8,10 @@ function Project() {
   const [showProjectData, setShowProjectData] = useState(false);
   useEffect(() => {
     const projectRepositories = [
-      'Image-Editor',
-      'BuildWebOnline',
-      'Bank-Management-System',
       'Sahaayak',
+      'BuildWebOnline',
+      'Image-Editor',
+      'Bank-Management-System',
     ];
     axios
       .get('https://api.github.com/users/Naman-1234/repos?per_page=100')
