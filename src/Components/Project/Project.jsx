@@ -6,6 +6,14 @@ import projectstaticData from '../../Data/projectStaticData.json';
 function Project() {
   const [projectData, setProjectData] = useState([]);
   const [showProjectData, setShowProjectData] = useState(false);
+
+  function compare(a, b) {
+    const millisecondsOfA = a.date.getTime();
+    const millisecondsOfB = b.date.getTime();
+    if (millisecondsOfA > millisecondsOfB) return -1;
+    if (millisecondsOfA < millisecondsOfB) return 1;
+    return 0;
+  }
   useEffect(() => {
     const projectRepositories = [
       'Sahaayak',
@@ -37,7 +45,16 @@ function Project() {
             techStack: projectStaticDetails[0]?.techStack,
           };
         });
-        console.log(projectstaticData);
+
+        //Correcting github Links
+        // repoDetails = repoDetails.map((link) => {
+        //   const linkString = link.toString();
+        //   linkString.replace(
+        //     'https://api.github.com/repos/',
+        //     'https://github.com/'
+        //   );
+        // });
+        await repoDetails.sort(compare);
         setProjectData(repoDetails);
         setShowProjectData(true);
       })
