@@ -1,5 +1,6 @@
 [
   {
+    "number": "1",
     "heading": "Sahaayak",
     "explanation": [
       "Sahaayak is an online platform which is enabled with certain features and valuable propects to improvise the traditional as well as virtual learning mode of education.",
@@ -27,6 +28,7 @@
   },
   {
     "heading": "BuildWebOnline",
+    "number": "2",
     "explanation": [
       "👉 This is an web app consisting of several text Editors specifically for HTML,CSS and JavaScript.",
       "👉 Real Time Editor and Output makes front Web Development absorbing and peaceful.",
@@ -44,14 +46,16 @@
     ]
   },
   {
+    "number": "5",
     "heading": "Image-Editor",
     "explanation": [
       "👉 Image-Editor as its name suggests is an image editor.",
       "👉 It lets you edit multiple photos on the basis on one you edit"
     ],
-    "techStack": ["Reactjs", "Blobs", "CSS", "eslint"]
+    "techStack": ["Reactjs", "Blobs", "CSS3", "eslint"]
   },
   {
+    "number": "4",
     "heading": "Bank-Management-System",
     "explanation": [
       "👉 This is a Bank Management System designed by using Programming Approach of Object Oriented Paradigm.",
@@ -61,5 +65,18 @@
       "👉 Designing of Classes can be illustrated using UML, Class diagrams and Sequential Diagrams. Please find them here."
     ],
     "techStack": ["Java", "OOPS", "Java-Swing"]
+  },
+  {
+    "number": "3",
+    "heading": "Compare-Github-Profile",
+    "explanation": [
+      "👉 This is a WebApp which acts as a Github Profile Comparer. Through this you can compare two github Profiles. Some of its functions are listed below:",
+      "👉 Provides a graph of different Languages used by you, Along with Number of lines of your code of that particular Programming Language and percentage it takes out of total. (This is built using Google Charts and it uses as the same funtionality as HashMaps which makes it great in terms of time consumption.)",
+      "👉 Provides you link of the profile.",
+      "👉 Number of followers.",
+      "👉 Numbers being Followed",
+      "👉 Selected in Github Developer Program"
+    ],
+    "techStack": ["JavaScript", "HTML5", "CSS3", "Github_API"]
   }
 ]

@@ -8,10 +8,15 @@ function Project() {
   const [showProjectData, setShowProjectData] = useState(false);
 
   function compare(a, b) {
-    const millisecondsOfA = a.date.getTime();
-    const millisecondsOfB = b.date.getTime();
-    if (millisecondsOfA > millisecondsOfB) return -1;
-    if (millisecondsOfA < millisecondsOfB) return 1;
+    // const millisecondsOfA = a.date.getTime();
+    // const millisecondsOfB = b.date.getTime();
+    // if (millisecondsOfA > millisecondsOfB) return -1;
+    // if (millisecondsOfA < millisecondsOfB) return 1;
+    // return 0;
+    console.log('Number is ', a.number, b.number);
+    if (a.number > b.number) return 1;
+
+    if (a.number < b.number) return -1;
     return 0;
   }
   useEffect(() => {
@@ -20,6 +25,7 @@ function Project() {
       'BuildWebOnline',
       'Image-Editor',
       'Bank-Management-System',
+      'Compare-Github-Profile',
     ];
     axios
       .get('https://api.github.com/users/Naman-1234/repos?per_page=100')
@@ -36,6 +42,7 @@ function Project() {
             (data) => data.heading === repo.name
           );
           return {
+            number: projectStaticDetails[0]?.number,
             heading: repo.name,
             // content: repo.description,
             content: projectStaticDetails[0]?.explanation,
